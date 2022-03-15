@@ -1,5 +1,8 @@
 import { Box } from "@mui/system";
-import DateTable from "./dateTable"
+import Contact from "../index/contact";
+import Visit from "../index/visit";
+import DateTable from "./dateTable";
+import SpecialHours from "./specialHours";
 
 const MobilePage = () => {
   return (
@@ -11,6 +14,9 @@ const MobilePage = () => {
       }}
     >
       <DateTable></DateTable>
+      <SpecialHours></SpecialHours>
+      <Visit></Visit>
+      <Contact></Contact>
     </Box>
   );
 };
