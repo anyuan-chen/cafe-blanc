@@ -140,7 +140,10 @@ const Lander = () => {
             alignItems: "flex-end",
           }}
         >
-          <Typography variant="body" sx={{ color: "#532A10" }}>
+          <Typography
+            variant="body"
+            sx={{ color: "#532A10", lineHeight: "normal" }}
+          >
             We handcraft treats like fresh cake, perfect pairings for our
             delicious drinks.
           </Typography>
