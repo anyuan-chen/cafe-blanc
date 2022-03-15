@@ -12,7 +12,7 @@ export default function MobileDropdown() {
         marginTop: "calc(100px + 5vh)",
         marginLeft: "7.5vw",
         marginRight: "7.5vw",
-        marginBottom: "5vw",
+        marginBottom: "4vw",
       }}
     >
       <Box
@@ -21,8 +21,8 @@ export default function MobileDropdown() {
           marginRight: "7.5vw",
           display: "flex",
           flexDirection: "column",
-          rowGap: "5vh",
-          marginBottom: "5vh",
+          rowGap: "4vh",
+          marginBottom: "4vh",
         }}
       >
         <MobileDropdownLink href="/">Home</MobileDropdownLink>

@@ -2,8 +2,9 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Image from "next/image";
-import Lander from "./lander"
-import CTA from "./cta"
+import Lander from "./lander";
+import CTA from "./cta";
+import About from "./about";
 const MobilePage = () => {
   return (
     <Box
@@ -15,7 +16,8 @@ const MobilePage = () => {
       }}
     >
       <Lander></Lander>
-     <CTA></CTA>
+      <CTA></CTA>
+      <About></About>
     </Box>
   );
 };
