@@ -103,37 +103,10 @@ const Lander = () => {
             src="/cafe_assets/Mobile/Mobile IMG 2 Cake.png"
           ></img>
         </Box>
-        <Box //copyright
-          sx={{
-            gridRow: "6/7",
-            gridColumn: "2/3",
-            display: "flex",
-            columnGap: "1rem",
-            alignItems: "flex-end",
-          }}
-        >
-          <Typography
-            sx={{
-              fontFamily: "DMSans",
-              fontSize: "10px",
-              color: "#532A10",
-            }}
-          >
-            © 2022
-          </Typography>
-          <hr
-            style={{
-              width: "auto",
-              height: "1px",
-              flexGrow: "1",
-              border: "none",
-              backgroundColor: "#532A10",
-            }}
-          ></hr>
-        </Box>
+        
         <Box //handcraft treats
           sx={{
-            gridRow: "7/10",
+            gridRow: "6/10",
             gridColumn: "2/3",
             textAlign: "left",
             display: "flex",
@@ -142,7 +115,7 @@ const Lander = () => {
         >
           <Typography
             variant="body"
-            sx={{ color: "#532A10", lineHeight: "normal" }}
+            sx={{ color: "#532A10" }}
           >
             We handcraft treats like fresh cake, perfect pairings for our
             delicious drinks.
