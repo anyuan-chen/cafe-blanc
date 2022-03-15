@@ -106,7 +106,7 @@ const Lander = () => {
         
         <Box //handcraft treats
           sx={{
-            gridRow: "6/10",
+            gridRow: "7/10",
             gridColumn: "2/3",
             textAlign: "left",
             display: "flex",
@@ -115,7 +115,7 @@ const Lander = () => {
         >
           <Typography
             variant="body"
-            sx={{ color: "#532A10" }}
+            sx={{ color: "#532A10", lineHeight: "normal" }}
           >
             We handcraft treats like fresh cake, perfect pairings for our
             delicious drinks.
