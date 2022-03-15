@@ -28,7 +28,7 @@ const FeaturedItems = () => {
         >
           <Typography
             variant="caption"
-            sx={{ marginRight: "20vw", color: "#532A10" }}
+            sx={{ marginRight: "15vw", color: "#532A10" }}
           >
             FEATURED ITEMS
           </Typography>

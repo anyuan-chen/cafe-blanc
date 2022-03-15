@@ -73,7 +73,7 @@ theme.typography = {
   },
   bottomNavHeading: {
     fontFamily: "RoxboroughCF",
-    fontSize: "6rem",
+    fontSize: "5rem",
     fontWeight: "normal",
     fontStretch: "normal",
     fontStyle: "normal",
