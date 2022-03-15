@@ -29,7 +29,7 @@ let theme = createTheme({
 theme.typography = {
   largeTagline: {
     fontFamily: "RoxboroughCF",
-    fontSize: "8rem",
+    fontSize: "7rem",
     fontWeight: "normal",
     fontStretch: "normal",
     fontStyle: "normal",

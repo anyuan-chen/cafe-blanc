@@ -6,7 +6,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 8px;
 }
-
+table,
+thead,
+tbody,
+tfoot,
+th,
+td,
+tr {
+  all: unset;
+}
 a {
   color: inherit;
   text-decoration: none;
