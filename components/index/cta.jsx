@@ -21,7 +21,8 @@ const CTA = () => {
           sx={{
             marginX: "15vw",
             border: "1px solid #532A10",
-            marginTop: "5vh",
+            paddingY: "1vh",
+            marginY: "3vh",
             textAlign: "center",
             borderRadius: "16px",
           }}

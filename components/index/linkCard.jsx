@@ -46,6 +46,7 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
               fontWeight: 500,
               textDecorationColor: "#E89465",
               textDecorationThickness: "2px",
+              textDecorationOffset: "2px",
             }}
           >
             {children}
