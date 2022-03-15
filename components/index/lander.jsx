@@ -32,11 +32,10 @@ const Lander = () => {
         <Box // cafe blanc offers comforting
           sx={{
             gridRow: "1/5",
-            paddingTop: "21px",
-            paddingLeft: "20px",
-            paddingRight: "14px",
-            paddingBottom: "17px",
             textAlign: "left",
+            display: "flex",
+            alignItems: "center",
+            paddingLeft: "10px",
             borderRadius: "16px",
             border: "1px solid #532A10",
           }}
