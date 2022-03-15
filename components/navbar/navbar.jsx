@@ -3,10 +3,12 @@ import { Box } from "@mui/system";
 import theme from "../../styles/theme";
 import DesktopMenu from "./desktopMenu";
 import DropdownSign from "./dropdownSign";
+import Link from "../shared/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import MobileMenu from "./mobileMenu";
 import { Typography } from "@mui/material";
+import MobileDropdown from "./mobileDropdown";
 
 const dropdownVariants = {
   open: {
@@ -18,7 +20,7 @@ const dropdownVariants = {
 };
 
 const Navbar = () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(true);
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <>
@@ -30,10 +32,11 @@ const Navbar = () => {
           display: matches ? "flex" : "",
           justifyContent: "space-between",
           borderBottom: matches ? "4px solid #532A10" : "",
-          margin: matches ? "" : "5vw",
+          marginX: matches ? "" : "5vw",
           border: matches ? "" : "4px solid #532A10",
           boxShadow: matches ? "" : "6px 6px 0 #532A10",
-          position: "relative",
+          position: "sticky",
+          top: "5vw",
           zIndex: "10",
         }}
       >
@@ -49,26 +52,20 @@ const Navbar = () => {
           component={motion.div}
           variants={dropdownVariants}
           animate={clicked ? "closed" : "open"}
+          initial="closed"
           sx={{
-            position: "absolute",
+            position: "fixed",
+            top: 0,
+            left: 0,
             zIndex: "2",
-            top: "0",
             width: "100vw",
+            height: "100vh",
             filter: "none",
             overflowY: "hidden",
             bgcolor: "#F5E4D7",
           }}
         >
-          <Box
-            sx={{
-              marginTop: "calc(100px + 5vw)",
-              marginLeft: "5vw",
-              marginRight: "5vw",
-              marginBottom: "5vw",
-            }}
-          >
-            <Typography variant="largeLink" sx={{textDecoration: "underline"}}> Home</Typography>
-          </Box>
+          <MobileDropdown></MobileDropdown>
         </Box>
       )}
     </>

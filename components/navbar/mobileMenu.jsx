@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 const iconVariants = {
   open: {
+    
     fontVariationSettings: `"TIME" 100`,
   },
   closed: {
@@ -13,8 +14,20 @@ const iconVariants = {
 
 export default function MobileMenu({ clicked, setClicked }) {
   return (
-    <>
-      <Button sx={{ display: "flex", alignItems: "center", height: "100%" }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "flex-start",
+        marginX: "4rem",
+      }}
+    >
+      <img
+        src="cafe_assets/Mobile/Mobile Logo Sign.svg"
+        height="56px"
+        style={{ position: "relative", top: "-5px", overflowY: "hidden" }}
+      ></img>
+      <Button sx={{ display: "flex", height: "100%" }}>
         <motion.div
           onClick={() => {
             setClicked(!clicked);
@@ -24,13 +37,14 @@ export default function MobileMenu({ clicked, setClicked }) {
           style={{
             color: "#532A10",
             fontFamily: "Anicons Regular",
-            fontSize: "3rem",
+            fontSize: "6rem",
+            alignSelf: "center",
           }}
         >
           A
         </motion.div>
       </Button>
-    </>
+    </Box>
   );
 }
 //https://github.com/framer/motion/issues/930
