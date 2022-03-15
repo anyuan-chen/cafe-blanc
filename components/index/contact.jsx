@@ -8,9 +8,9 @@ const Contact = () => {
     <Box
       sx={{
         background: "#FFF1E1",
-        paddingTop: "5vh",
+        paddingTop: "7vh",
         borderTop: "2px solid #532A10",
-        paddingBottom: "10vh",
+        paddingBottom: "7vh",
       }}
     >
       <Box

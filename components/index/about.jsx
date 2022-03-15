@@ -9,8 +9,9 @@ const About = () => {
       sx={{
         width: "90vw",
         marginX: "5vw",
-        marginTop: "7vw",
-        paddingBottom: "5vh",
+        paddingTop: "5vh",
+        marginTop: "5vw",
+        paddingBottom: "7vh",
         display: "flex",
         textAlign: "center",
         flexDirection: "column",

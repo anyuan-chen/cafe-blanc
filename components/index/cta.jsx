@@ -6,6 +6,8 @@ const CTA = () => {
   return (
     <Box
       sx={{
+        marginTop: "5vh",
+        paddingTop: "7vh",
         background: "#FFF1E1",
       }}
     >
@@ -22,7 +24,6 @@ const CTA = () => {
             marginX: "15vw",
             border: "1px solid #532A10",
             paddingY: "1vh",
-            marginY: "3vh",
             textAlign: "center",
             borderRadius: "16px",
           }}

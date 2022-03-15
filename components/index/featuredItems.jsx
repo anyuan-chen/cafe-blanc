@@ -9,6 +9,7 @@ const FeaturedItems = () => {
       sx={{
         background: "#FFF1E1",
         paddingBottom: "5vh",
+        paddingTop: "5vh"
       }}
     >
       <Box
