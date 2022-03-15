@@ -61,8 +61,8 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
       <Box
         sx={{
           position: "relative",
-          left: "50vw",
-          bottom: "80vw",
+          left: "45vw",
+          bottom: "85vw",
           bgcolor: "white",
           height: "100px",
           width: "100px",
