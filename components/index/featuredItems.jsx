@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import LinkCard from "../index/linkCard";
 import FeaturedItem from "../index/featuredItem";
+import Link from "../shared/link";
 const FeaturedItems = () => {
   return (
     <Box
@@ -11,7 +12,7 @@ const FeaturedItems = () => {
     >
       <Box
         sx={{
-          marginX: "5vw",
+          marginX: "10vw",
           display: "flex",
           flexDirection: "column",
           rowGap: "5vh",
@@ -55,6 +56,24 @@ const FeaturedItems = () => {
         >
           Espresso
         </FeaturedItem>
+        <Box
+          href="/menu"
+          component={Link}
+          sx={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            border: "2px solid #532A10",
+          }}
+        >
+          <Typography
+            variant="caption"
+            sx={{ color: "#532A10", textDecoration: "none", py: "2rem" }}
+          >
+            BROWSE THE MENU
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );

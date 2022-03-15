@@ -13,11 +13,22 @@ const FeaturedItem = ({ description, src, children }) => {
         borderRadius: "16px",
       }}
     >
-      <Box sx={{ paddingY: "15px", paddingX: "15px" }}>
-        <img
-          src={src}
-          style={{ border: "2px solid #532A10", transform: "scale(1.1)" }}
-        ></img>
+      <Box
+        sx={{
+          paddingY: "15px",
+          paddingX: "15px",
+          borderRadius: "16px",
+        }}
+      >
+        <Box
+          sx={{
+            border: "2px solid #532A10",
+            overflow: "hidden",
+            borderRadius: "16px",
+          }}
+        >
+          <img src={src} style={{ transform: "scale(1.05)" }}></img>
+        </Box>
       </Box>
       <Box
         sx={{
