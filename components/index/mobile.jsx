@@ -5,6 +5,7 @@ import Image from "next/image";
 import Lander from "./lander";
 import CTA from "./cta";
 import About from "./about";
+import FeaturedItems from "./featuredItems"
 const MobilePage = () => {
   return (
     <Box
@@ -18,6 +19,7 @@ const MobilePage = () => {
       <Lander></Lander>
       <CTA></CTA>
       <About></About>
+      <FeaturedItems></FeaturedItems>
     </Box>
   );
 };

@@ -15,11 +15,29 @@ const About = () => {
         textAlign: "center",
         flexDirection: "column",
         rowGap: "4vh",
+        alignItems: "center",
       }}
     >
-      <Typography>
+      <img
+        src="cafe_assets/Mobile/Mobile Scrumptious Picture.png"
+        width="60%"
+      ></img>
+      <Typography variant="h2" sx={{ color: "#532A10" }}>
         <span style={{ fontStyle: "italic" }}>Scrumptious</span> food and drink
         for <span style={{ fontStyle: "italic" }}>all</span>
+      </Typography>
+      <hr
+        style={{
+          height: 1,
+          width: "100%",
+          border: "none",
+          backgroundColor: "#532A10",
+        }}
+      ></hr>
+      <Typography variant="body" sx={{ color: "#532A10" }}>
+        From the very beginning, Café Blanc has been committed to service and
+        quality. Our coffee and desserts are made in-house daily with organic,
+        locally sourced, and fresh ingredients.
       </Typography>
     </Box>
   );
