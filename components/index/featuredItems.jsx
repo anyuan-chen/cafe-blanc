@@ -8,6 +8,7 @@ const FeaturedItems = () => {
     <Box
       sx={{
         background: "#FFF1E1",
+        paddingBottom: "5vh",
       }}
     >
       <Box
@@ -25,7 +26,10 @@ const FeaturedItems = () => {
             justifyContent: "space-between",
           }}
         >
-          <Typography variant="caption" sx={{ marginRight: "20vw" }}>
+          <Typography
+            variant="caption"
+            sx={{ marginRight: "20vw", color: "#532A10" }}
+          >
             FEATURED ITEMS
           </Typography>
           <hr

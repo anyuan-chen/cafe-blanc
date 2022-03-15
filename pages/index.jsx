@@ -17,7 +17,6 @@ const Home = () => {
         background: "#FFFAF4",
         width: "100vw",
         paddingTop: "5vw",
-        paddingBottom: "10vw",
       }}
     >
       <Navbar></Navbar>

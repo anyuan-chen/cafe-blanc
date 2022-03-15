@@ -9,13 +9,11 @@ const Visit = () => {
       sx={{
         width: "90vw",
         marginX: "5vw",
-        marginTop: "7vw",
+        marginTop: "5vh",
         paddingBottom: "5vh",
         display: "flex",
-        textAlign: "center",
         flexDirection: "column",
         rowGap: "4vh",
-        alignItems: "center",
       }}
     >
       <hr
@@ -26,6 +24,9 @@ const Visit = () => {
           backgroundColor: "#532A10",
         }}
       ></hr>
+      <Typography variant="caption" sx={{ color: "#532A10" }}>
+        {"visit us at 341 North Rd Unit E".toUpperCase()}
+      </Typography>
     </Box>
   );
 };

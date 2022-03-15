@@ -5,7 +5,9 @@ import Image from "next/image";
 import Lander from "./lander";
 import CTA from "./cta";
 import About from "./about";
-import FeaturedItems from "./featuredItems"
+import FeaturedItems from "./featuredItems";
+import Visit from "./visit";
+import Contact from "./contact";
 const MobilePage = () => {
   return (
     <Box
@@ -13,13 +15,14 @@ const MobilePage = () => {
         background: "#FFFAF4",
         width: "100vw",
         paddingTop: "5vw",
-        paddingBottom: "10vw",
       }}
     >
       <Lander></Lander>
       <CTA></CTA>
       <About></About>
       <FeaturedItems></FeaturedItems>
+      <Visit></Visit>
+      <Contact></Contact>
     </Box>
   );
 };
