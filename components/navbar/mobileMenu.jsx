@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 const iconVariants = {
   open: {
-    
     fontVariationSettings: `"TIME" 100`,
   },
   closed: {

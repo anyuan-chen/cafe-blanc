@@ -21,7 +21,7 @@ export default function MobileDropdown() {
           marginRight: "7.5vw",
           display: "flex",
           flexDirection: "column",
-          rowGap: "4vh",
+          rowGap: "3vh",
           marginBottom: "4vh",
         }}
       >
@@ -66,8 +66,8 @@ export default function MobileDropdown() {
             sx={{
               borderRadius: "100%",
               bgcolor: "white",
-              height: "16rem",
-              width: "16rem",
+              height: "14rem",
+              width: "14rem",
               border: "2px solid #532A10",
               display: "flex",
               justifyContent: "center",
@@ -87,8 +87,8 @@ export default function MobileDropdown() {
             sx={{
               borderRadius: "100%",
               bgcolor: "white",
-              height: "16rem",
-              width: "16rem",
+              height: "14rem",
+              width: "14rem",
               border: "2px solid #532A10",
               display: "flex",
               justifyContent: "center",

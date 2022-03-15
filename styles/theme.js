@@ -139,7 +139,7 @@ theme.typography = {
   },
   body: {
     fontFamily: "DMSans",
-    fontSize: "2.3rem",
+    fontSize: "2rem",
     fontWeight: "normal",
     fontStretch: "normal",
     fontStyle: "normal",
@@ -205,7 +205,7 @@ theme.typography = {
   homeTextItalics: {
     fontFamily: "DMSans",
     letterSpacing: "normal",
-    fontSize: "2rem",
+    fontSize: "1.75rem",
     fontWeight: "normal",
     fontStretch: "normal",
     fontStyle: "italic",
