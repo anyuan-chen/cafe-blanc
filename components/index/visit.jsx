@@ -27,6 +27,13 @@ const Visit = () => {
       <Typography variant="caption" sx={{ color: "#532A10" }}>
         {"visit us at 341 North Rd Unit E".toUpperCase()}
       </Typography>
+      <iframe
+        width="100%"
+        height="450"
+        style={{ border: "0" }}
+        loading="lazy"
+        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZWkX3Wh5hlQRjH6vW4E8NXI&key=${process.env.MAPS_API}`}
+      ></iframe>
     </Box>
   );
 };
