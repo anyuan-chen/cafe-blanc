@@ -18,11 +18,13 @@ const Contact = () => {
           marginX: "10vw",
           display: "flex",
           flexDirection: "column",
-          rowGap: "5vh",
+          rowGap: "3vh",
           color: "#532A10",
         }}
       >
-        <Typography variant="bottomNavSubtitle">CONTACT</Typography>
+        <Typography variant="bottomNavSubtitle" sx={{ paddingBottom: "2vh" }}>
+          CONTACT
+        </Typography>
         <Typography variant="bottomNavText">(778) 717-6281</Typography>
         <Typography variant="bottomNavText">Instagram</Typography>
         <Typography variant="bottomNavText">info@cafeblanc.ca</Typography>
@@ -32,7 +34,14 @@ const Contact = () => {
         >
           341 North Rd Unit E, Coquitlam, BC V3K 3V8
         </Typography>
-        <hr></hr>
+        <hr
+          style={{
+            height: 1,
+            width: "100%",
+            border: "none",
+            backgroundColor: "#532A10",
+          }}
+        ></hr>{" "}
         <Box
           sx={{ display: "flex", alignItems: "center", columnGap: "1.5rem" }}
         >
