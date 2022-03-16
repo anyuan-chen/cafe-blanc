@@ -22,10 +22,11 @@ const dropdownVariants = {
 const Navbar = () => {
   const [clicked, setClicked] = useState(true);
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
-  return (
+  return (  
     <>
       <Box
         sx={{
+          
           height: matches ? "100px" : "80px",
           bgcolor: "background.beige.100",
           width: matches ? "100vw" : "90vw",
@@ -36,7 +37,7 @@ const Navbar = () => {
           border: matches ? "" : "4px solid #532A10",
           boxShadow: matches ? "" : "6px 6px 0 #532A10",
           position: "sticky",
-          top: "5vw",
+          top: matches ? "0" : "5vw",
           zIndex: "10",
         }}
       >

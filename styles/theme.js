@@ -1,5 +1,4 @@
-import { createTheme } from "@mui/material/styles";
-
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 let theme = createTheme({
   components: {
     MuiLink: {
@@ -50,7 +49,10 @@ theme.typography = {
       lineHeight: 0.97,
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "17.5rem",
+      fontSize: "11.5rem",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "13rem",
       lineHeight: "normal",
     },
   },

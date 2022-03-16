@@ -35,6 +35,7 @@ const Lander = () => {
             textAlign: "left",
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             paddingLeft: "10px",
             borderRadius: "16px",
             border: "1px solid #532A10",

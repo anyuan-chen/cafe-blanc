@@ -7,7 +7,7 @@ const CTA = () => {
     <Box
       sx={{
         marginTop: "5vh",
-        paddingTop: "7vh",
+        paddingTop: "10vh",
         background: "#FFF1E1",
       }}
     >
@@ -16,14 +16,14 @@ const CTA = () => {
           marginX: "5vw",
           display: "flex",
           flexDirection: "column",
-          rowGap: "5vh",
+          rowGap: "8vh",
         }}
       >
         <Box
           sx={{
             marginX: "15vw",
             border: "1px solid #532A10",
-            paddingY: "1vh",
+            paddingY: "2vh",
             textAlign: "center",
             borderRadius: "16px",
           }}

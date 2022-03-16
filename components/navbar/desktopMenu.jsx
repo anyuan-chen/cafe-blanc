@@ -3,8 +3,8 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 export default function DesktopMenu() {
   return (
-    <Box sx={{ display: "flex" }}>
-      <Link href="/">
+    <Box sx={{ display: "flex"  }}>
+      <Link href="/" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
             height: "100%",
@@ -22,7 +22,7 @@ export default function DesktopMenu() {
           </Typography>
         </Box>
       </Link>
-      <Link href="/menu">
+      <Link href="/menu" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
             height: "100%",
@@ -38,7 +38,7 @@ export default function DesktopMenu() {
           </Typography>
         </Box>
       </Link>
-      <Link href="/hours">
+      <Link href="/hours" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
             height: "100%",
@@ -54,7 +54,7 @@ export default function DesktopMenu() {
           </Typography>
         </Box>
       </Link>
-      <Link href="/faq">
+      <Link href="/faq" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
             height: "100%",
@@ -71,7 +71,7 @@ export default function DesktopMenu() {
         </Box>
       </Link>
 
-      <Link href="/order">
+      <Link href="/order" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
             height: "100%",

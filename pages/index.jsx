@@ -8,6 +8,7 @@ import Navbar from "../components/navbar/navbar";
 import MobilePage from "../components/index/mobile";
 import { useMediaQuery } from "@mui/material";
 import theme from "../styles/theme";
+import DesktopPage from "../components/index/desktop/desktopPage";
 
 const Home = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -16,12 +17,12 @@ const Home = () => {
       sx={{
         background: "#FFFAF4",
         width: "100vw",
-        paddingTop: "5vw",
+        paddingTop: matches ? "" : "5vw",
       }}
     >
       <Navbar></Navbar>
-
       {!matches && <MobilePage></MobilePage>}
+      {matches && <DesktopPage></DesktopPage>}
     </Box>
   );
 };
