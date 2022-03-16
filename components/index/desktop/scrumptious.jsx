@@ -6,10 +6,11 @@ export default function Scrumptious() {
   return (
     <Box
       sx={{
-        marginX: "15vw",
+        paddingX: "15vw",
         display: "flex",
         height: "calc(100vh - 100px)",
         alignItems: "center",
+        background: "#FFF1E1",
       }}
     >
       <Box
@@ -39,7 +40,13 @@ export default function Scrumptious() {
             organic, locally sourced, and fresh ingredients.
           </Typography>
         </Box>
-        <Box sx={{  display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <img
             style={{ width: "100%" }}
             src="/cafe_assets/Desktop/Desktop Scrumptious Image.png"
