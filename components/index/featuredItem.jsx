@@ -22,7 +22,7 @@ const FeaturedItem = ({ description, src, children }) => {
       >
         <Box
           sx={{
-            border: "2px solid #532A10",
+            border: "1px solid #532A10",
             overflow: "hidden",
             borderRadius: "16px",
           }}
@@ -40,8 +40,8 @@ const FeaturedItem = ({ description, src, children }) => {
       >
         <Box
           sx={{
-            borderBottom: "2px solid #532A10",
-            borderLeft: "2px solid #532A10",
+            borderBottom: "1px solid #532A10",
+            borderLeft: "1px solid #532A10",
             paddingY: "2rem",
             textAlign: "center",
           }}
@@ -55,7 +55,7 @@ const FeaturedItem = ({ description, src, children }) => {
         </Box>
         <Box
           sx={{
-            borderLeft: "2px solid #532A10",
+            borderLeft: "1px solid #532A10",
             flexGrow: 1,
             paddingX: "30px",
             display: "flex",

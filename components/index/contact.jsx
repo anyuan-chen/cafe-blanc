@@ -26,13 +26,19 @@ const Contact = () => {
           CONTACT
         </Typography>
         <Typography variant="bottomNavText">(778) 717-6281</Typography>
-        <Typography variant="bottomNavText">Instagram</Typography>
-        <Typography variant="bottomNavText">info@cafeblanc.ca</Typography>
-        <Typography
-          variant="bottomNavText"
-          sx={{ textDecoration: "underline" }}
-        >
-          341 North Rd Unit E, Coquitlam, BC V3K 3V8
+        <Typography variant="bottomNavText">
+          <Link href="https://www.instagram.com/cafeblanccoffee/?hl=en">
+            Instagram
+          </Link>
+        </Typography>
+        <Typography variant="bottomNavText">
+          <Link href="mailto:info@cafeblanc.ca">Email</Link>
+        </Typography>
+        <Typography variant="bottomNavText">
+          <Link href="mailto:info@cafeblanc.ca">
+            {" "}
+            341 North Rd Unit E, Coquitlam, BC V3K 3V8
+          </Link>
         </Typography>
         <hr
           style={{

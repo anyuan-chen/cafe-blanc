@@ -1,6 +1,16 @@
 import { createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "inherit",
+          textDecorationColor: "#532A10",
+        },
+      },
+    },
+  },
   palette: {
     menu: {
       beige: "#556cd6",

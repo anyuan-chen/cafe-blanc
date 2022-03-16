@@ -8,19 +8,22 @@ const Visit = () => {
     <Box
       sx={{
         width: "90vw",
-        marginX: "5vw",
+        marginX: "10vw",
         marginTop: "5vh",
         paddingBottom: "5vh",
         display: "flex",
         flexDirection: "column",
         rowGap: "4vh",
+        alignItems: "flex-start",
       }}
     >
       <hr
         style={{
           height: 1,
-          width: "100%",
+          width: "90%",
           border: "none",
+          marginLeft: 0,
+          marginRight: 0,
           backgroundColor: "#532A10",
         }}
       ></hr>
@@ -28,7 +31,7 @@ const Visit = () => {
         {"visit us at 341 North Rd Unit E".toUpperCase()}
       </Typography>
       <iframe
-        width="100%"
+        width="90%"
         height="450"
         style={{ border: "0" }}
         loading="lazy"
