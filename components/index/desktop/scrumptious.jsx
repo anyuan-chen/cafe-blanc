@@ -4,29 +4,48 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 export default function Scrumptious() {
   return (
-    <LayoutDesktop>
+    <Box
+      sx={{
+        marginX: "15vw",
+        display: "flex",
+        height: "calc(100vh - 100px)",
+        alignItems: "center",
+      }}
+    >
       <Box
         sx={{
-          paddingY: "15vh",
-          maxHeight: "100%",
-          display: "flex",
-          columnGap: "2rem",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          columnGap: "20rem",
+          color: "#532A10",
         }}
       >
-        <Box sx={{}}>
-          <Typography>Scrumptious food and drink for all</Typography>
-          <hr></hr>
-          <Typography>
+        <Box sx={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}>
+          <Typography variant="h2">
+            <span style={{ fontStyle: "italic" }}>Scrumptious</span> food and
+            drink for all
+          </Typography>
+          <hr
+            style={{
+              border: "none",
+              height: "1px",
+              background: "#532A10",
+              width: "100%",
+            }}
+          ></hr>
+          <Typography variant="body">
             From the very beginning, Café Blanc has been committed to service
             and quality. Our coffee and desserts are made in-house daily with
             organic, locally sourced, and fresh ingredients.
           </Typography>
         </Box>
-        <img
-          style={{ maxHeight: "100%", maxWidth: "100%" }}
-          src="/cafe_assets/Desktop/Desktop Scrumptious Image.png"
-        ></img>
+        <Box sx={{  display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <img
+            style={{ width: "100%" }}
+            src="/cafe_assets/Desktop/Desktop Scrumptious Image.png"
+          ></img>
+        </Box>
       </Box>
-    </LayoutDesktop>
+    </Box>
   );
 }

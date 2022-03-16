@@ -2,6 +2,7 @@ import { Box } from "@mui/system";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
+import Link from "../shared/link";
 const iconVariants = {
   open: {
     fontVariationSettings: `"TIME" 100`,
@@ -21,11 +22,13 @@ export default function MobileMenu({ clicked, setClicked }) {
         marginX: "4rem",
       }}
     >
-      <img
-        src="cafe_assets/Mobile/Mobile Logo Sign.svg"
-        height="56px"
-        style={{ position: "relative", top: "-5px", overflowY: "hidden" }}
-      ></img>
+      <Link href="/">
+        <img
+          src="cafe_assets/Mobile/Mobile Logo Sign.svg"
+          height="56px"
+          style={{ position: "relative", top: "-5px", overflowY: "hidden" }}
+        ></img>
+      </Link>
       <Button sx={{ display: "flex", height: "100%" }}>
         <motion.div
           onClick={() => {

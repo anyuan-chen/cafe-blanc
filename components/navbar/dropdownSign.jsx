@@ -4,6 +4,7 @@ import styles from "../../styles/DropdownSign.module.css";
 import { Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import theme from "../../styles/theme";
+import Link from "../shared/link";
 
 const DropdownSign = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -16,46 +17,48 @@ const DropdownSign = () => {
     },
   };
   return (
-    <motion.div
-      id={styles.sign}
-      style={{
-        width: "200px",
-        height: "50px",
-        left: "30px",
-      }}
-      initial="rest"
-      animate="rest"
-      whileHover="active"
-      variants={signAnimation}
-    >
-      <motion.div className={`${styles.left} ${styles.handle}`}>
-        <div className={styles.circle} style={{}}>
-          <div className={styles.innercircle}></div>
-        </div>
-        <motion.div className={styles.outerStick}>
-          <motion.div className={styles.stick} style={{}}></motion.div>
-        </motion.div>
-      </motion.div>
-      <Typography
-        sx={{
-          fontSize: matches ? "3.2rem" : "1.6rem",
-          color: "background.beige.100",
-          fontFamily: "DMSans",
-          fontWeight: "semibold",
-          letterSpacing: "0.03em",
+    <Link href="/">
+      <motion.div
+        id={styles.sign}
+        style={{
+          width: "200px",
+          height: "50px",
+          left: "30px",
         }}
+        initial="rest"
+        animate="rest"
+        whileHover="active"
+        variants={signAnimation}
       >
-        Café Blanc
-      </Typography>
-      <motion.div className={`${styles.right} ${styles.handle}`}>
-        <div className={styles.circle}>
-          <div className={styles.innercircle}></div>
-        </div>
-        <motion.div className={styles.outerStick}>
-          <motion.div className={styles.stick}></motion.div>
+        <motion.div className={`${styles.left} ${styles.handle}`}>
+          <div className={styles.circle} style={{}}>
+            <div className={styles.innercircle}></div>
+          </div>
+          <motion.div className={styles.outerStick}>
+            <motion.div className={styles.stick} style={{}}></motion.div>
+          </motion.div>
+        </motion.div>
+        <Typography
+          sx={{
+            fontSize: matches ? "3.2rem" : "1.6rem",
+            color: "background.beige.100",
+            fontFamily: "DMSans",
+            fontWeight: "semibold",
+            letterSpacing: "0.03em",
+          }}
+        >
+          Café Blanc
+        </Typography>
+        <motion.div className={`${styles.right} ${styles.handle}`}>
+          <div className={styles.circle}>
+            <div className={styles.innercircle}></div>
+          </div>
+          <motion.div className={styles.outerStick}>
+            <motion.div className={styles.stick}></motion.div>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </Link>
   );
 };
 
