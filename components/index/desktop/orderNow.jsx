@@ -2,10 +2,10 @@ import React from "react";
 import LayoutDesktop from "./layoutDesktop";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import LinkCard from "../linkCard";
+import OrderCard from "./orderCard";
 export default function OrderNow() {
   return (
-    <Box>
+    <Box sx={{ borderBottom: "2px solid #532A10" }}>
       <Box
         sx={{
           display: "flex",
@@ -37,7 +37,13 @@ export default function OrderNow() {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ display: "flex", columnGap: "3vw" }}>
+        <Box
+          sx={{
+            display: "flex",
+            columnGap: "3vw",
+            marginY: "15vh",
+          }}
+        >
           <Box
             sx={{
               width: "27vw",
@@ -45,8 +51,10 @@ export default function OrderNow() {
               flexDirection: "column",
               rowGap: "5vh",
               paddingX: "3vw",
+              color: "#532A10",
               paddingY: "5vh",
-              border: "2px solid brown",
+              borderRadius: "16px",
+              border: "2px solid #532A10",
             }}
           >
             <Typography variant="h3">
@@ -56,14 +64,20 @@ export default function OrderNow() {
               Order on DoorDash, UberEats, or visit us in-person
             </Typography>
           </Box>
-          <Box sx={{ width: "18vw", border: "2px solid brown" }}>
-           
-             
-          </Box>
-          <Box sx={{ width: "18vw", border: "2px solid brown" }}>
-            
-            
-          </Box>
+          <OrderCard
+            src="/cafe_assets/Mobile/Mobile Doordash Art.svg"
+            href="https://www.doordash.com/store/cafe-white-coquitlam-1263432/"
+            logoSrc="/cafe_assets/Mobile/Mobile Doordash logo.svg"
+          >
+            DoorDash
+          </OrderCard>
+          <OrderCard
+            src="/cafe_assets/Mobile/Mobile UberEatsArt.svg"
+            href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"
+            logoSrc="/cafe_assets/Mobile/Mobile Uber Eats logo.svg"
+          >
+            UberEats
+          </OrderCard>
         </Box>
       </Box>
     </Box>

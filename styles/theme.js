@@ -1,5 +1,14 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 let theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1536,
+      xl: 1536,
+    },
+  },
   components: {
     MuiLink: {
       styleOverrides: {
@@ -52,7 +61,7 @@ theme.typography = {
       fontSize: "11.5rem",
     },
     [theme.breakpoints.up("xl")]: {
-      fontSize: "13rem",
+      fontSize: "14.5rem",
       lineHeight: "normal",
     },
   },

@@ -11,7 +11,7 @@ import theme from "../styles/theme";
 import DesktopPage from "../components/index/desktop/desktopPage";
 
 const Home = () => {
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const matches = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <Box
       sx={{

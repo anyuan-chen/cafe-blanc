@@ -4,26 +4,35 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 export default function LanderDesktop() {
   return (
-    <LayoutDesktop>
+    <Box sx={{ height: "calc(95vh - 100px)", width: "100vw", display: "flex" }}>
       <Box
         sx={{
-          marginX: "15vw",
+          marginX: "7.5vw",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
           color: "#532A10",
+          marginTop: "10rem",
         }}
       >
         <Typography variant="largeTagline">
           Made with <span style={{ fontStyle: "italic" }}>compassion.</span>
         </Typography>
-        {/* <Box sx={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)" }}>
+        <Box
+          sx={{
+            marginX: "7.5vw",
+            display: "grid",
+            marginTop: "7rem",
+            gridTemplateColumns: "repeat(5,1fr)",
+            columnGap: "4rem",
+          }}
+        >
           <Box
             sx={{
               gridColumn: "1/2",
               display: "flex",
               flexDirection: "column",
+              rowGap: "6rem",
             }}
           >
             <Box // cafe blanc offers comforting
@@ -33,8 +42,9 @@ export default function LanderDesktop() {
                 textAlign: "center",
                 justifyContent: "center",
                 paddingX: "18px",
-                paddingY: "30px",
+                paddingY: "40px",
                 borderRadius: "16px",
+                flexGrow: 1,
                 border: "1px solid #532A10",
               }}
             >
@@ -43,7 +53,6 @@ export default function LanderDesktop() {
                 Coquitlam.{" "}
               </Typography>
             </Box>
-            <Box sx={{ flexGrow: 1 }}> </Box>
             <Box //cake picture
               sx={{
                 borderRadius: "16px",
@@ -63,21 +72,24 @@ export default function LanderDesktop() {
             </Box>
           </Box>
           <Box sx={{ gridColumn: "2/6", display: "grid" }}>
-            <Box
-              sx={{ display: "flex", alignItems: "center", columnGap: "1rem" }}
-            >
-              <img src="cafe_assets/Desktop/Desktop Beans.svg"></img>
+            <Box sx={{ display: "flex", columnGap: "4rem" }}>
+              <img
+                src="cafe_assets/Desktop/Desktop Beans.svg"
+                style={{ alignSelf: "flex-start" }}
+              ></img>
               <hr
                 style={{
                   border: "none",
                   height: "1px",
-                  flexGrow: 1,
                   backgroundColor: "#532A10",
+                  flexGrow: 1,
+                  margin: "none",
+                  marginTop: "15px",
                 }}
               ></hr>
-              <Box sx={{ width: "80px"}}></Box>
+              <Box sx={{ width: "0px" }}></Box>
             </Box>
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex", columnGap: "2rem" }}>
               <Box
                 sx={{
                   borderRadius: "16px",
@@ -122,13 +134,13 @@ export default function LanderDesktop() {
               sx={{ display: "flex", alignItems: "center", columnGap: "1rem" }}
             >
               <Typography variant="homeTextNormal">
-                Our specialties are wonderful treats like fresh cake, perfect
-                pairings for our delicious drinks.
+                Try wonderful treats like cake, perfectly paired with
+                handcrafted beverages. 
               </Typography>
             </Box>
           </Box>
-        </Box> */}
+        </Box>
       </Box>
-    </LayoutDesktop>
+    </Box>
   );
 }

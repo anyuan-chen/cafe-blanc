@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 
@@ -25,9 +26,19 @@ const FeaturedItem = ({ description, src, children }) => {
             border: "1px solid #532A10",
             overflow: "hidden",
             borderRadius: "16px",
+            maxHeight: "100%",
+            maxWidth: "100%",
           }}
         >
-          <img src={src} style={{ transform: "scale(1.05)" }}></img>
+          <img
+            src={src}
+            height="100%"
+            style={{
+              transform: "scale(1.05)",
+              maxHeight: "100%",
+              maxWidth: "100%",
+            }}
+          ></img>
         </Box>
       </Box>
       <Box
