@@ -3,6 +3,9 @@ import { Box } from "@mui/system";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
+import theme from "../../styles/theme";
+
 const descriptionVariant = {
   open: {
     height: "auto",
@@ -12,6 +15,7 @@ const descriptionVariant = {
   },
 };
 const Question = ({ children, description }) => {
+  const matches = useMediaQuery(theme.breakpoints.up("lg"));
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -20,7 +24,7 @@ const Question = ({ children, description }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          marginY: "3rem",
+          marginY: matches ? "0" : "3rem",
         }}
       >
         <Typography variant="questionHeading">{children}</Typography>

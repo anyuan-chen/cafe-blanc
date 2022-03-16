@@ -11,7 +11,7 @@ export default function DesktopMenu() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderLeft: "4px solid #532A10",
+            borderLeft: "2px solid #532A10",
             px: "6rem",
           }}
         >
@@ -29,7 +29,7 @@ export default function DesktopMenu() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderLeft: "4px solid #532A10",
+            borderLeft: "2px solid #532A10",
             px: "6rem",
           }}
         >
@@ -45,7 +45,7 @@ export default function DesktopMenu() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderLeft: "4px solid #532A10",
+            borderLeft: "2px solid #532A10",
             px: "6rem",
           }}
         >
@@ -61,7 +61,7 @@ export default function DesktopMenu() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderLeft: "4px solid #532A10",
+            borderLeft: "2px solid #532A10",
             px: "6rem",
           }}
         >
@@ -78,7 +78,7 @@ export default function DesktopMenu() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderLeft: "4px solid #532A10",
+            borderLeft: "2px solid #532A10",
             bgcolor: "#F5E4D7",
             px: "5rem",
           }}

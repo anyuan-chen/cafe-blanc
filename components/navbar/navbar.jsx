@@ -22,17 +22,16 @@ const dropdownVariants = {
 const Navbar = () => {
   const [clicked, setClicked] = useState(true);
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
-  return (  
+  return (
     <>
       <Box
         sx={{
-          
           height: matches ? "100px" : "80px",
           bgcolor: "background.beige.100",
           width: matches ? "100vw" : "90vw",
           display: matches ? "flex" : "",
           justifyContent: "space-between",
-          borderBottom: matches ? "4px solid #532A10" : "",
+          borderBottom: matches ? "2px solid #532A10" : "",
           marginX: matches ? "" : "5vw",
           border: matches ? "" : "4px solid #532A10",
           boxShadow: matches ? "" : "6px 6px 0 #532A10",

@@ -11,7 +11,7 @@ const Visit = () => {
           display: "flex",
           flexDirection: "column",
           height: "100%",
-          marginX: "10vw",
+          marginX: "15vw",
           rowGap: "10vh",
           paddingTop: "10vh",
         }}

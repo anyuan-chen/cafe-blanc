@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 import OrderCard from "./orderCard";
 export default function OrderNow() {
   return (
-    <Box sx={{ borderBottom: "2px solid #532A10" }}>
+    <Box sx={{ borderBottom: "2px solid #532A10", color: "#532A10" }}>
       <Box
         sx={{
           display: "flex",
