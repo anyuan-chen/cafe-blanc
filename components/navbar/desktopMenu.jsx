@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 export default function DesktopMenu() {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", fontFamily: "DMSans" }}>
       <Link href="/" sx={{ textDecoration: "none" }}>
         <Box
           sx={{

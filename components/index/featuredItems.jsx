@@ -71,6 +71,7 @@ const FeaturedItems = () => {
             justifyContent: "center",
             border: "2px solid #532A10",
             textDecoration: "none",
+            background: "#FFFAF4",
           }}
         >
           <Typography

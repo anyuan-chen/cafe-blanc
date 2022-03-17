@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import LinkCard from "../../index/linkCard";
+import { motion } from "framer-motion";
 import FeaturedItem from "./featuredItem";
 import Link from "../../shared/link";
 const FeaturedItems = () => {
@@ -16,13 +17,16 @@ const FeaturedItems = () => {
         }}
       >
         <Box>
-          <Typography variant="h3" sx={{ color: "#532A10" }}>
+          <Typography
+            variant="h3"
+            sx={{ color: "#532A10", fontStyle: "italic" }}
+          >
             Featured Items
           </Typography>
         </Box>
         <Box
           sx={{
-            marginX: "15vw",
+            marginX: "10vw",
             display: "flex",
             flexDirection: "row",
             columnGap: "5vw",
@@ -47,7 +51,11 @@ const FeaturedItems = () => {
             Espresso
           </FeaturedItem>
         </Box>
-        <Box>
+        <Box
+          component={motion.div}
+          sx={{ color: "#532A10" }}
+          whileHover={{ color: "#FFFAF4", backgroundColor: "#532A10" }}
+        >
           <Box
             href="/menu"
             component={Link}
@@ -60,10 +68,7 @@ const FeaturedItems = () => {
               textDecoration: "none",
             }}
           >
-            <Typography
-              variant="caption"
-              sx={{ color: "#532A10", py: "2rem", px: "4rem" }}
-            >
+            <Typography variant="caption" sx={{ py: "2rem", px: "4rem" }}>
               BROWSE THE MENU
             </Typography>
           </Box>

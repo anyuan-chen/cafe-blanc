@@ -10,7 +10,7 @@ const FeaturedItem = ({ description, src, children }) => {
         border: "2px solid #532A10",
         height: "170px",
         background: "#FFFAF4",
-        boxShadow: "2px 2px 0 #532A10",
+        boxShadow: "6px 6px 0 #532A10",
         borderRadius: "16px",
       }}
     >

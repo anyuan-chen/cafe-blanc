@@ -10,11 +10,11 @@ export default function OrderCard({ src, href, children, logoSrc }) {
           width: "18vw",
           border: "2px solid #532A10",
           padding: "4rem",
+          boxShadow: "8px 8px 0 #532A10",
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
-          
         <Box
           sx={{
             display: "flex",
@@ -23,7 +23,6 @@ export default function OrderCard({ src, href, children, logoSrc }) {
             justifyContent: "center",
           }}
         >
-          
           <Box sx={{ paddingX: "4rem", paddingY: "8rem", bgcolor: "#532A10" }}>
             <img src={src} style={{ maxWidth: "100%" }}></img>
           </Box>
@@ -36,7 +35,12 @@ export default function OrderCard({ src, href, children, logoSrc }) {
           >
             <Typography
               component={Link}
-              sx={{ color: "#532A10" }}
+              sx={{
+                color: "#532A10",
+                fontWeight: "500",
+                textUnderlineOffset: "2px",
+                textDecorationColor: "#E89465",
+              }}
               href={href}
               variant="link"
             >
@@ -48,9 +52,7 @@ export default function OrderCard({ src, href, children, logoSrc }) {
             ></img>
           </Box>
         </Box>
-        
       </Box>
-      
     </>
   );
 }

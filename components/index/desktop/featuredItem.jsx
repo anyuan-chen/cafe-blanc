@@ -61,7 +61,7 @@ const FeaturedItem = ({ description, src, children }) => {
           }}
         >
           <Typography
-            variant="questionHeading"
+            variant="link"
             sx={{
               fontFamily: "RoxboroughCF",
               color: "#532A10",

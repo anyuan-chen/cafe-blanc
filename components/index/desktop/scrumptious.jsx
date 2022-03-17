@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 import theme from "../../../styles/theme";
 import { useMediaQuery } from "@mui/material";
 export default function Scrumptious() {
-  const matches = useMediaQuery(theme.breakpoints.up("xl"));
+  const matches = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <Box
@@ -14,7 +14,9 @@ export default function Scrumptious() {
         display: "flex",
         height: "calc(100vh - 100px)",
         alignItems: "center",
-        background: "#FFF1E1",
+        background: matches ? "#FFF1E1" : "",
+        borderTop: "2px solid #532A10",
+        borderBottom: "2px solid #532A10",
       }}
     >
       <Box
@@ -33,7 +35,7 @@ export default function Scrumptious() {
             gridColumn: "1/2",
           }}
         >
-          <Typography variant={matches ? "h2" : "h3"}>
+          <Typography variant={"h3"}>
             <span style={{ fontStyle: "italic" }}>Scrumptious</span> food and
             drink for all
           </Typography>

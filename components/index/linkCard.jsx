@@ -12,7 +12,7 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
         sx={{
           width: matches ? "60vw" : "60vw",
           height: matches ? "50rem" : "75vw",
-          boxShadow: "4px 4px 0 #532A10",
+          boxShadow: "10px 10px 0 #532A10",
           border: "2px solid #532A10",
           background: "white",
           display: "flex",
@@ -76,7 +76,7 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
             justifyContent: "center",
             borderRadius: "100%",
             border: "2px solid #532A10",
-            boxShadow: "5px 5px 3px #532A10",
+            boxShadow: "8px 7px 0 #532A10",
           }}
         >
           <img src={logoSrc} alt="logo" width="50px"></img>

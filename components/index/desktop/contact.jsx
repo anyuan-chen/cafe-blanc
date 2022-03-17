@@ -35,7 +35,7 @@ const Contact = () => {
             width="30%"
           ></img>
           <Typography variant="bottomNavHeading">Café Blanc</Typography>
-          <Typography variant="homeTextItalics">
+          <Typography variant="homeTextItalics" sx={{ color: "#73421E" }}>
             Scrumptious food & drink for all.
           </Typography>
         </Box>
@@ -65,15 +65,19 @@ const Contact = () => {
               }}
             >
               <Typography variant="bottomNavSubtitle">CONTACT</Typography>
-              <Typography variant="bottomNavText">(778) 717-6281</Typography>
+              <Typography variant="bottomNavText" sx={{ color: "#73421E" }}>
+                (778) 717-6281
+              </Typography>
               <Typography
                 component={Link}
+                sx={{ color: "#73421E" }}
                 href="mailto:info@cafeblanc.ca"
                 variant="bottomNavText"
               >
                 info@cafeblanc.ca
               </Typography>
               <Typography
+                sx={{ color: "#73421E" }}
                 component={Link}
                 href="https://www.google.com/maps/place/Caf%C3%A9+Blanc/@49.2446666,-122.8942055,17z/data=!3m1!4b1!4m5!3m4!1s0x54867968dd176965:0x72353c815baf7e8c!8m2!3d49.2447565!4d-122.892018"
                 variant="bottomNavText"
@@ -100,20 +104,36 @@ const Contact = () => {
               }}
             >
               <Typography variant="bottomNavSubtitle">BROWSE</Typography>
-              <Typography component={Link} href="/" variant="bottomNavText">
+              <Typography
+                component={Link}
+                href="/"
+                variant="bottomNavText"
+                sx={{ color: "#73421E" }}
+              >
                 Home
               </Typography>
-              <Typography component={Link} href="/cafe_assets/menu.pdf" variant="bottomNavText">
+              <Typography
+                component={Link}
+                href="/cafe_assets/menu.pdf"
+                variant="bottomNavText"
+                sx={{ color: "#73421E" }}
+              >
                 Menu
               </Typography>
               <Typography
                 component={Link}
                 href="/hours"
+                sx={{ color: "#73421E" }}
                 variant="bottomNavText"
               >
                 Hours
               </Typography>
-              <Typography component={Link} href="/faq" variant="bottomNavText">
+              <Typography
+                component={Link}
+                href="/faq"
+                sx={{ color: "#73421E" }}
+                variant="bottomNavText"
+              >
                 FAQ
               </Typography>
             </Box>

@@ -7,7 +7,7 @@ import theme from "../../../styles/theme";
 export default function OrderNow() {
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
   return (
-    <Box sx={{ borderBottom: "2px solid #532A10", color: "#532A10" }}>
+    <Box sx={{  color: "#532A10" }}>
       <Box
         sx={{
           display: "flex",
@@ -59,8 +59,9 @@ export default function OrderNow() {
               border: "2px solid #532A10",
             }}
           >
-            <Typography variant= {matches ? "h3" : "bottomNavHeading"}>
-              Craving something <span fontStyle="italic">delicious?</span>
+            <Typography variant={matches ? "h3" : "bottomNavHeading"}>
+              Craving something{" "}
+              <span style={{ fontStyle: "italic" }}> delicious? </span>
             </Typography>
             <Typography variant="body">
               Order on DoorDash, UberEats, or visit us in-person
