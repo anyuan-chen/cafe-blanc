@@ -1,9 +1,18 @@
 import React from "react";
 import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
+import theme from "../../../styles/theme";
 export default function SpecialHoursAndTable() {
+  const matches = useMediaQuery(theme.breakpoints.up("xl"));
   return (
-    <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" , marginX: "10vw", marginTop: "10vh" }}>
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        marginX: matches ? "10vw" : "8vw",
+        marginTop: "10vh",
+      }}
+    >
       <Box
         sx={{
           paddingBottom: "2vh",
@@ -68,14 +77,22 @@ export default function SpecialHoursAndTable() {
             }}
           >
             <td
-              style={{ textAlign: "left", color: "#FFFAF4", padding: "2rem" }}
+              style={{
+                textAlign: "left",
+                color: "#FFFAF4",
+                padding: matches ? "2rem" : "1rem",
+              }}
             >
               <Typography sx={{}} variant="body">
                 Day
               </Typography>
             </td>
             <td
-              style={{ textAlign: "left", color: "#FFFAF4", padding: "2rem" }}
+              style={{
+                textAlign: "left",
+                color: "#FFFAF4",
+                padding: matches ? "2rem" : "1rem",
+              }}
             >
               <Typography variant="body">Hours</Typography>
             </td>
@@ -131,7 +148,10 @@ export default function SpecialHoursAndTable() {
             border-bottom: 2px solid #532a10;
             border-right: 2px solid #532a10;
             color: #532a10;
-            padding: 2rem;
+            padding-left: ${matches ? "2rem" : "1rem"};
+            padding-right: ${matches ? "2rem" : "1rem"};
+            padding-top: 2rem;
+            padding-bottom: 2rem;
           }
         `}</style>
       </Box>

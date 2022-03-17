@@ -23,7 +23,7 @@ export default function MobileDropdown() {
           marginRight: "7.5vw",
           display: "flex",
           flexDirection: "column",
-          rowGap: "3vh",
+          rowGap: matches ? "5vh" : "3vh",
           marginBottom: "4vh",
         }}
       >

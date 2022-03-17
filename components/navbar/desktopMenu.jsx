@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import DesktopMenuLink from "./desktopMenuLink";
 import { useRouter } from "next/router";
+import CheveronMenu from "./cheveronMenu";
 export default function DesktopMenu() {
   const router = useRouter();
   let style = [0, 0, 0, 0];
@@ -29,25 +30,7 @@ export default function DesktopMenu() {
       <DesktopMenuLink href="/faq" highlight={style[3]}>
         FAQ
       </DesktopMenuLink>
-      <Link href="/order" sx={{ textDecoration: "none" }}>
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderLeft: "2px solid #532A10",
-            bgcolor: "#F5E4D7",
-            px: "10rem",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: "3rem", color: "#532A10", fontWeight: 600 }}
-          >
-            Order Now
-          </Typography>
-        </Box>
-      </Link>
+      <CheveronMenu></CheveronMenu>
     </Box>
   );
 }

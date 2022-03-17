@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import LinkCard from "../../index/linkCard";
 import FeaturedItem from "./featuredItem";
 import Link from "../../shared/link";
+import ContactLink from "./contactLink";
 const Contact = () => {
   return (
     <Box
@@ -68,22 +69,12 @@ const Contact = () => {
               <Typography variant="bottomNavText" sx={{ color: "#73421E" }}>
                 (778) 717-6281
               </Typography>
-              <Typography
-                component={Link}
-                sx={{ color: "#73421E" }}
-                href="mailto:info@cafeblanc.ca"
-                variant="bottomNavText"
-              >
+              <ContactLink href="mailto:info@cafeblanc.ca">
                 info@cafeblanc.ca
-              </Typography>
-              <Typography
-                sx={{ color: "#73421E" }}
-                component={Link}
-                href="https://www.google.com/maps/place/Caf%C3%A9+Blanc/@49.2446666,-122.8942055,17z/data=!3m1!4b1!4m5!3m4!1s0x54867968dd176965:0x72353c815baf7e8c!8m2!3d49.2447565!4d-122.892018"
-                variant="bottomNavText"
-              >
+              </ContactLink>
+              <ContactLink href="https://www.google.com/maps/place/Caf%C3%A9+Blanc/@49.2446666,-122.8942055,17z/data=!3m1!4b1!4m5!3m4!1s0x54867968dd176965:0x72353c815baf7e8c!8m2!3d49.2447565!4d-122.892018">
                 341 North Rd Unit E, Coquitlam, BC V3K 3V8
-              </Typography>
+              </ContactLink>
             </Box>
           </Box>
           <Box
@@ -104,38 +95,10 @@ const Contact = () => {
               }}
             >
               <Typography variant="bottomNavSubtitle">BROWSE</Typography>
-              <Typography
-                component={Link}
-                href="/"
-                variant="bottomNavText"
-                sx={{ color: "#73421E" }}
-              >
-                Home
-              </Typography>
-              <Typography
-                component={Link}
-                href="/cafe_assets/menu.pdf"
-                variant="bottomNavText"
-                sx={{ color: "#73421E" }}
-              >
-                Menu
-              </Typography>
-              <Typography
-                component={Link}
-                href="/hours"
-                sx={{ color: "#73421E" }}
-                variant="bottomNavText"
-              >
-                Hours
-              </Typography>
-              <Typography
-                component={Link}
-                href="/faq"
-                sx={{ color: "#73421E" }}
-                variant="bottomNavText"
-              >
-                FAQ
-              </Typography>
+              <ContactLink href="/">Home</ContactLink>
+              <ContactLink href="/cafe_assets/menu.pdf">Menu</ContactLink>
+              <ContactLink href="/hours">Hours</ContactLink>
+              <ContactLink href="/faq">FAQ</ContactLink>
             </Box>
           </Box>
           <Box
@@ -156,27 +119,15 @@ const Contact = () => {
               }}
             >
               <Typography variant="bottomNavSubtitle">LINKS</Typography>
-              <Typography
-                component={Link}
-                href="https://www.instagram.com/cafeblanccoffee/?hl=en"
-                variant="bottomNavText"
-              >
+              <ContactLink href="https://www.instagram.com/cafeblanccoffee/?hl=en">
                 Instagram
-              </Typography>
-              <Typography
-                component={Link}
-                href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"
-                variant="bottomNavText"
-              >
+              </ContactLink>
+              <ContactLink href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw">
                 UberEats
-              </Typography>
-              <Typography
-                component={Link}
-                href="https://www.doordash.com/store/cafe-white-coquitlam-1263432/"
-                variant="bottomNavText"
-              >
+              </ContactLink>
+              <ContactLink href="https://www.doordash.com/store/cafe-white-coquitlam-1263432/">
                 Doordash
-              </Typography>
+              </ContactLink>
             </Box>
           </Box>
         </Box>

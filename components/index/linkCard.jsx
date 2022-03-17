@@ -9,6 +9,8 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
   return (
     <>
       <Box
+        component={Link}
+        href={href}
         sx={{
           width: matches ? "30vw" : "60vw",
           height: matches ? "50rem" : "75vw",
@@ -16,9 +18,10 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
           border: "2px solid #532A10",
           background: "white",
           display: "flex",
+          alignItems: "center",
           rowGap: matches ? "2rem" : "5vw",
           flexDirection: "column",
-          padding: matches ? "2rem" : "5vw",
+          padding: matches ? "3rem" : "5vw",
         }}
       >
         <Box
@@ -38,13 +41,13 @@ const LinkCard = ({ src, href, logoSrc, children }) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            width: "100%",
           }}
         >
           <Typography
-            component={Link}
-            href={href}
             variant="link"
             sx={{
+              textDecoration: "underline",
               color: "brown",
               fontWeight: 500,
               textDecorationColor: "#E89465",

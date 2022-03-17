@@ -14,6 +14,9 @@ export default function OrderCard({ src, href, children, logoSrc }) {
           display: "flex",
           justifyContent: "center",
         }}
+        component={Link}
+        href={href}
+        target="_blank"
       >
         <Box
           sx={{
