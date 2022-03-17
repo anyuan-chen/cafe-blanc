@@ -34,7 +34,7 @@ const Navbar = () => {
           borderBottom: matches ? "2px solid #532A10" : "",
           marginX: matches ? "" : "5vw",
           border: matches ? "" : "4px solid #532A10",
-          boxShadow: matches ? "" : "6px 6px 0 #532A10",
+          boxShadow: matches ? "" : "3px 3px 0 #532A10",
           position: "sticky",
           top: matches ? "0" : "5vw",
           zIndex: "10",

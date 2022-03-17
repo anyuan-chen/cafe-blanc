@@ -4,7 +4,7 @@ let theme = createTheme({
     values: {
       xs: 0,
       sm: 600,
-      md: 800,
+      md: 768,
       lg: 1400,
       xl: 1536,
     },
@@ -54,7 +54,7 @@ theme.typography = {
     lineHeight: 1.06,
     letterSpacing: "normal",
     [theme.breakpoints.up("md")]: {
-      fontSize: "9.75rem",
+      fontSize: "11rem",
       lineHeight: 0.97,
     },
     [theme.breakpoints.up("lg")]: {

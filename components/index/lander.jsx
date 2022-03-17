@@ -5,151 +5,15 @@ import Image from "next/image";
 import LinkCard from "../index/linkCard";
 import { useMediaQuery } from "@mui/material";
 import theme from "../../styles/theme";
+import LanderTablet from "./landerTablet";
+import LanderMobile from "./landerMobile";
 const Lander = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const statement = matches ? "width : '40vh'" : "";
-  return (
-    <Box
-      sx={{
-        width: "90vw",
-        marginX: "5vw",
-        marginTop: "7vw",
-        paddingBottom: "5vh",
-        display: "flex",
-        textAlign: "center",
-        alignItems: matches ? "center" : "inherit",
-
-        flexDirection: "column",
-        rowGap: "4vh",
-      }}
-    >
-      <Typography variant="largeTagline" sx={{ color: "#532A10" }}>
-        Made with <span style={{ fontStyle: "italic" }}>compassion.</span>
-      </Typography>
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gridTemplateRows: "repeat(16, 1fr)",
-          columnGap: "4rem",
-          marginX: "5vw",
-          width: matches ? "40vw" : "80vw"
-        }}
-      >
-        <Box // cafe blanc offers comforting
-          sx={{
-            gridRow: "1/5",
-            textAlign: "left",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingLeft: "10px",
-            borderRadius: "16px",
-            border: "1px solid #532A10",
-          }}
-        >
-          <Typography variant="homeTextItalics" sx={{ color: "#532A10" }}>
-            Café Blanc offers comforting and delicious coffee experiences in
-            Coquitlam.{" "}
-          </Typography>
-        </Box>
-        <Box //decorative coffee
-          sx={{
-            gridRow: "1/1",
-            gridColumn: "2/3",
-            display: "flex",
-            columnGap: "1rem",
-            alignItems: "start",
-          }}
-        >
-          <img src="/cafe_assets/Mobile/Mobile Decorative Coffee.svg"></img>
-          <hr
-            style={{
-              width: "auto",
-              height: "1px",
-              flexGrow: "1",
-              border: "none",
-              backgroundColor: "#532A10",
-            }}
-          ></hr>
-        </Box>
-        <Box //coffee picture
-          sx={{
-            gridRow: "2/6",
-            gridColumn: "2/3",
-            borderRadius: "16px",
-            border: "1px solid #532A10",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              transform: "scale(1.05)",
-            }}
-            alt="cake"
-            src="/cafe_assets/Mobile/Mobile IMG 1 Coffee.png"
-          ></img>
-        </Box>
-        <Box //cake picture
-          sx={{
-            gridRow: "6/10",
-            gridColumn: "1/2",
-            borderRadius: "16px",
-            border: "1px solid #532A10",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              transform: "scale(1.05)",
-            }}
-            alt="cake"
-            src="/cafe_assets/Mobile/Mobile IMG 2 Cake.png"
-          ></img>
-        </Box>
-
-        <Box //handcraft treats
-          sx={{
-            gridRow: "7/10",
-            gridColumn: "2/3",
-            textAlign: "left",
-            display: "flex",
-            alignItems: "flex-end",
-          }}
-        >
-          <Typography
-            variant="body"
-            sx={{ color: "#532A10", lineHeight: "normal" }}
-          >
-            We handcraft treats like fresh cake, perfect pairings for our
-            delicious drinks.
-          </Typography>
-        </Box>
-        <Box //coffee picture
-          sx={{
-            gridRow: "11/17",
-            gridColumn: "1/3",
-            borderRadius: "16px",
-            border: "1px solid #532A10",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              transform: "scale(1.05)",
-            }}
-            alt="cake"
-            src="/cafe_assets/Mobile/Mobile IMG 3 Making Coffee.png"
-          ></img>
-        </Box>
-      </Box>
-    </Box>
+  return matches ? (
+    <LanderTablet></LanderTablet>
+  ) : (
+    <LanderMobile></LanderMobile>
   );
 };
 export default Lander;

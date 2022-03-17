@@ -1,15 +1,17 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { motion } from "framer-motion";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import Link from "../shared/link";
 import MobileDropdownLink from "./mobileDropdownLink";
+import theme from "../../styles/theme";
 
 export default function MobileDropdown() {
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box
       sx={{
-        marginTop: "calc(100px + 4vh)",
+        marginTop: matches ? "calc(100px + 8vh)" : "calc(100px + 4vh)",
         marginLeft: "7.5vw",
         marginRight: "7.5vw",
         marginBottom: "4vw",

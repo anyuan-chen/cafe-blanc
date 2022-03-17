@@ -8,8 +8,9 @@ const FeaturedItems = () => {
     <Box
       sx={{
         background: "#FFF1E1",
-        paddingBottom: "5vh",
-        paddingTop: "5vh",
+        paddingBottom: "15vh",
+        paddingTop: "10vh",
+
       }}
     >
       <Box
@@ -69,7 +70,7 @@ const FeaturedItems = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            border: "2px solid #532A10",
+            border: "1px solid #532A10",
             textDecoration: "none",
             background: "#FFFAF4",
           }}

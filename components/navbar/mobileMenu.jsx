@@ -20,6 +20,7 @@ export default function MobileMenu({ clicked, setClicked }) {
         justifyContent: "space-between",
         alignItems: "flex-start",
         marginX: "4rem",
+        height: "100%"
       }}
     >
       <Link href="/">
@@ -29,7 +30,7 @@ export default function MobileMenu({ clicked, setClicked }) {
           style={{ position: "relative", top: "-5px", overflowY: "hidden" }}
         ></img>
       </Link>
-      <Button sx={{ display: "flex", height: "100%" }}>
+      <Button sx={{ display: "flex", alignSelf: "center"}}>
         <motion.div
           onClick={() => {
             setClicked(!clicked);
@@ -40,7 +41,6 @@ export default function MobileMenu({ clicked, setClicked }) {
             color: "#532A10",
             fontFamily: "Anicons Regular",
             fontSize: "6rem",
-            alignSelf: "center",
           }}
         >
           A

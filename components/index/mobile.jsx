@@ -22,8 +22,7 @@ const MobilePage = () => {
     >
       <Lander></Lander>
       <CTA></CTA>
-      {matches && <Scrumptious></Scrumptious>}
-      {!matches && <About></About>}
+      <About></About>
       <FeaturedItems></FeaturedItems>
       <Visit></Visit>
       <Contact></Contact>

@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
+import theme from "../../styles/theme";
 
 const FeaturedItem = ({ description, src, children }) => {
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box
       sx={{
@@ -10,7 +12,7 @@ const FeaturedItem = ({ description, src, children }) => {
         border: "2px solid #532A10",
         height: "170px",
         background: "#FFFAF4",
-        boxShadow: "6px 6px 0 #532A10",
+        boxShadow: matches ? "6px 6px 0 #532A10" : "4px 4px 0 #532A10"  ,
         borderRadius: "16px",
       }}
     >

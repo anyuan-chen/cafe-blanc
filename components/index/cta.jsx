@@ -10,7 +10,7 @@ const CTA = () => {
       sx={{
         marginTop: "5vh",
         paddingTop: "10vh",
-        paddingBottom: "10vh",
+        paddingBottom: "15vh",
         background: "#FFF1E1",
       }}
     >
@@ -26,35 +26,45 @@ const CTA = () => {
         <Box
           sx={{
             marginX: "15vw",
-            border: "1px solid #532A10",
+            border: matches ? "" : "1px solid #532A10",
             paddingY: "2vh",
             textAlign: "center",
-
             borderRadius: "16px",
           }}
         >
-          <Typography variant="h3" sx={{ color: "#532A10" }}>
+          <Typography variant={matches ? "h2" : "h3"} sx={{ color: "#532A10" }}>
             Craving something{" "}
             <span style={{ fontStyle: "italic" }}>delicious?</span>
           </Typography>
         </Box>
-        <Box sx={{ marginLeft: "15vw" }}>
-          <LinkCard
-            src="/cafe_assets/Mobile/Mobile Doordash Art.svg"
-            href="https://www.doordash.com/store/cafe-white-coquitlam-1263432/"
-            logoSrc="/cafe_assets/Mobile/Mobile Doordash logo.svg"
+        <Box
+          sx={{
+            display: matches ? "flex" : "",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <Box sx={{ marginLeft: matches ? "" : "15vw" }}>
+            <LinkCard
+              src="/cafe_assets/Mobile/Mobile Doordash Art.svg"
+              href="https://www.doordash.com/store/cafe-white-coquitlam-1263432/"
+              logoSrc="/cafe_assets/Mobile/Mobile Doordash logo.svg"
+            >
+              DoorDash
+            </LinkCard>
+          </Box>
+          <Box
+            sx={{
+              marginLeft: matches ? "" : "15vw",
+            }}
           >
-            DoorDash
-          </LinkCard>
-        </Box>
-        <Box sx={{ marginLeft: "15vw", marginTop: matches ? "" : "-15vw" }}>
-          <LinkCard
-            src="/cafe_assets/Mobile/Mobile UberEatsArt.svg"
-            href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"
-            logoSrc="/cafe_assets/Mobile/Mobile Uber Eats logo.svg"
-          >
-            UberEats
-          </LinkCard>
+            <LinkCard
+              src="/cafe_assets/Mobile/Mobile UberEatsArt.svg"
+              href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"
+              logoSrc="/cafe_assets/Mobile/Mobile Uber Eats logo.svg"
+            >
+              UberEats
+            </LinkCard>
+          </Box>
         </Box>
       </Box>
     </Box>
