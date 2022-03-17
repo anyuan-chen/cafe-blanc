@@ -22,7 +22,7 @@ const FeaturedItems = () => {
         </Box>
         <Box
           sx={{
-            marginX: "10vw",
+            marginX: "15vw",
             display: "flex",
             flexDirection: "row",
             columnGap: "5vw",

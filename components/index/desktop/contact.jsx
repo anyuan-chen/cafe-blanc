@@ -103,7 +103,7 @@ const Contact = () => {
               <Typography component={Link} href="/" variant="bottomNavText">
                 Home
               </Typography>
-              <Typography component={Link} href="/menu" variant="bottomNavText">
+              <Typography component={Link} href="/cafe_assets/menu.pdf" variant="bottomNavText">
                 Menu
               </Typography>
               <Typography

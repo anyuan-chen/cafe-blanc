@@ -26,7 +26,9 @@ export default function MobileDropdown() {
         }}
       >
         <MobileDropdownLink href="/">Home</MobileDropdownLink>
-        <MobileDropdownLink href="/menu">Menu</MobileDropdownLink>
+        <MobileDropdownLink href="/cafe_assets/menu.pdf">
+          Menu
+        </MobileDropdownLink>
         <MobileDropdownLink href="/hours">Hours</MobileDropdownLink>
         <MobileDropdownLink href="/faq">FAQ</MobileDropdownLink>
       </Box>
