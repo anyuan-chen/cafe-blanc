@@ -27,10 +27,10 @@ export default function SpecialHoursAndTable() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            rowGap: "12vh",
+            rowGap: "8vh",
             color: "#532A10",
             bgcolor: "#FFF1E1",
-            paddingY: "4vh",
+            paddingY: "6vh",
             paddingX: "5rem",
             borderRadius: "16px",
           }}

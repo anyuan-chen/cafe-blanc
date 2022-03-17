@@ -23,7 +23,7 @@ const FeaturedItem = ({ description, src, children }) => {
       sx={{
         display: "grid",
         gridTemplateColumns: "repeat(7, 1fr)",
-        border: "2px solid #532A10",
+        border: "1px solid #532A10",
         background: "#FFFAF4",
         boxShadow: "6px 6px 0 #532A10",
         borderRadius: "16px",

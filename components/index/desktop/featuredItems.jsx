@@ -113,7 +113,7 @@ const FeaturedItems = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                border: "2px solid #532A10",
+                border: "1px solid #532A10",
                 textDecoration: "none",
               }}
             >
