@@ -85,7 +85,23 @@ export default function DateTable() {
           </tr>
           <tr className="row">
             <td className="element">
-              <Typography variant="body">Monday</Typography>
+              <Typography variant="body">Friday</Typography>
+            </td>
+            <td className="element">
+              <Typography variant="body">12:30pm - 8pm</Typography>
+            </td>
+          </tr>
+          <tr className="row">
+            <td className="element">
+              <Typography variant="body">Saturday</Typography>
+            </td>
+            <td className="element">
+              <Typography variant="body">10:00am- 10pm</Typography>
+            </td>
+          </tr>
+          <tr className="row">
+            <td className="element">
+              <Typography variant="body">Sunday</Typography>
             </td>
             <td className="element">
               <Typography variant="body">10am - 8:15pm</Typography>

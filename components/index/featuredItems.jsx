@@ -10,7 +10,6 @@ const FeaturedItems = () => {
         background: "#FFF1E1",
         paddingBottom: "15vh",
         paddingTop: "10vh",
-
       }}
     >
       <Box
@@ -70,7 +69,9 @@ const FeaturedItems = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            border: "1px solid #532A10",
+            border: "2px solid #532A10",
+            boxShadow: "4px 4px 0 #532A10",
+            borderRadius: "6px",
             textDecoration: "none",
             background: "#FFFAF4",
           }}

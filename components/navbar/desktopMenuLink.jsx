@@ -45,7 +45,7 @@ export default function DesktopMenuLink({ href, children, highlight }) {
                 fontSize: "3rem",
                 color: "#532A10",
                 fontFamily: "DMSans",
-                fontWeight: highlight ? "300" : "500",
+                fontWeight:"500",
               }}
               component={motion.h2}
               variants={animationVariants}

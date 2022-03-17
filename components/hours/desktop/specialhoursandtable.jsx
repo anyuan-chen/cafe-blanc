@@ -27,16 +27,18 @@ export default function SpecialHoursAndTable() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            rowGap: "3vh",
+            rowGap: "6vh",
             color: "#532A10",
             bgcolor: "#FFF1E1",
-            paddingY: "3vh",
+            paddingY: "4vh",
             paddingX: "5rem",
             borderRadius: "16px",
           }}
         >
           <Typography variant="h3">Special Dates</Typography>
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box
+            sx={{ display: "flex", flexDirection: "column", rowGap: "2rem" }}
+          >
             <Typography variant="body">Labor Day | Idk when</Typography>
             <Typography variant="body">Labor Day | Idk when</Typography>
             <Typography variant="body">Labor Day | Idk when</Typography>
@@ -131,7 +133,23 @@ export default function SpecialHoursAndTable() {
           </tr>
           <tr className="row">
             <td className="element">
-              <Typography variant="body">Monday</Typography>
+              <Typography variant="body">Friday</Typography>
+            </td>
+            <td className="element">
+              <Typography variant="body">12:30pm - 8pm</Typography>
+            </td>
+          </tr>
+          <tr className="row">
+            <td className="element">
+              <Typography variant="body">Saturday</Typography>
+            </td>
+            <td className="element">
+              <Typography variant="body">10:00am- 10pm</Typography>
+            </td>
+          </tr>
+          <tr className="row">
+            <td className="element">
+              <Typography variant="body">Sunday</Typography>
             </td>
             <td className="element">
               <Typography variant="body">10am - 8:15pm</Typography>
