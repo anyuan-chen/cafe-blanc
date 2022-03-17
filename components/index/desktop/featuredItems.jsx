@@ -5,19 +5,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import FeaturedItem from "./featuredItem";
 import Link from "../../shared/link";
 const buttonVariants = {
-  rest: {},
-  animate: {
-    backgroundColor: "#532A10",
-  },
-};
-const textVariants = {
   rest: {
-    color: "#532A10",
+    boxShadow: "4px 4px 0 #532A10",
   },
   animate: {
-    color: "#FFFAF4",
+    boxShadow: "6px 6px 0 #532A10",
+    transform: "translate(-2px, -2px)",
   },
 };
+
 const staggerVariants = {
   rest: {
     opacity: 0,
@@ -99,7 +95,7 @@ const FeaturedItems = () => {
           </Box>
           <Box
             component={motion.div}
-            sx={{ color: "#532A10" }}
+            sx={{ color: "#532A10", borderRadius: "6px" }}
             initial="rest"
             animate="rest"
             whileHover="animate"
@@ -113,14 +109,16 @@ const FeaturedItems = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                border: "1px solid #532A10",
+                border: "2px solid #532A10",
+                boxShadow: "2px 2px 0 #532A10",
+                borderRadius: "6px",
                 textDecoration: "none",
+                color: "#532A10",
               }}
             >
               <Typography
                 variant="caption"
-                sx={{ py: "2rem", px: "4rem", color: "inherit" }}
-                variants={textVariants}
+                sx={{ py: "2rem", px: "4rem", color: "#532A10" }}
                 component={motion.h2}
               >
                 BROWSE THE MENU
