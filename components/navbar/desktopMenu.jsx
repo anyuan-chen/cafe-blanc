@@ -80,7 +80,7 @@ export default function DesktopMenu() {
             alignItems: "center",
             borderLeft: "2px solid #532A10",
             bgcolor: "#F5E4D7",
-            px: "5rem",
+            px: "10rem",
           }}
         >
           <Typography

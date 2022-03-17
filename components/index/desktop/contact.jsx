@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Box
       sx={{
-        height: "40vh",
+        height: "50vh",
         paddingTop: "5vh",
         background: "#FFF1E1",
         borderTop: "1px solid #532A10",
@@ -60,7 +60,7 @@ const Contact = () => {
                 display: "flex",
                 flexDirection: "column",
                 marginTop: "2rem",
-                rowGap: "2rem",
+                rowGap: "5rem",
                 width: "60%",
               }}
             >
@@ -95,7 +95,7 @@ const Contact = () => {
                 display: "flex",
                 flexDirection: "column",
                 marginTop: "2rem",
-                rowGap: "2rem",
+                rowGap: "5rem",
                 width: "60%",
               }}
             >
@@ -130,7 +130,7 @@ const Contact = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                rowGap: "2rem",
+                rowGap: "5rem",
                 marginTop: "2rem",
                 width: "60%",
               }}

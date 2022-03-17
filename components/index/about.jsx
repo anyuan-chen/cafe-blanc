@@ -1,9 +1,11 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Image from "next/image";
+import theme from "../../styles/theme";
 import LinkCard from "../index/linkCard";
 const About = () => {
+  const matches = useMediaQuery(theme.breakpoints.up('md'))
   return (
     <Box
       sx={{
@@ -21,7 +23,7 @@ const About = () => {
     >
       <img
         src="cafe_assets/Mobile/Mobile Scrumptious Picture.png"
-        width="60%"
+        width= {matches ? "30%": "60%"}
       ></img>
       <Typography variant="h2" sx={{ color: "#532A10" }}>
         <span style={{ fontStyle: "italic" }}>Scrumptious</span> food and drink

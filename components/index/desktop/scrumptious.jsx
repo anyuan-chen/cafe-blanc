@@ -2,7 +2,11 @@ import React from "react";
 import LayoutDesktop from "./layoutDesktop";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
+import theme from "../../../styles/theme";
+import { useMediaQuery } from "@mui/material";
 export default function Scrumptious() {
+  const matches = useMediaQuery(theme.breakpoints.up("xl"));
+
   return (
     <Box
       sx={{
@@ -21,8 +25,15 @@ export default function Scrumptious() {
           color: "#532A10",
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}>
-          <Typography variant="h2">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            rowGap: "4rem",
+            gridColumn: "1/2",
+          }}
+        >
+          <Typography variant={matches ? "h2" : "h3"}>
             <span style={{ fontStyle: "italic" }}>Scrumptious</span> food and
             drink for all
           </Typography>
@@ -45,6 +56,7 @@ export default function Scrumptious() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            gridColumn: "2/3",
           }}
         >
           <img

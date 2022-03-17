@@ -1,13 +1,16 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
+import theme from "../../styles/theme";
 import LinkCard from "../index/linkCard";
 
 const CTA = () => {
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box
       sx={{
         marginTop: "5vh",
         paddingTop: "10vh",
+        paddingBottom: "10vh",
         background: "#FFF1E1",
       }}
     >
@@ -16,6 +19,7 @@ const CTA = () => {
           marginX: "5vw",
           display: "flex",
           flexDirection: "column",
+          justifyItems: matches ? "center" : "",
           rowGap: "8vh",
         }}
       >
@@ -25,6 +29,7 @@ const CTA = () => {
             border: "1px solid #532A10",
             paddingY: "2vh",
             textAlign: "center",
+
             borderRadius: "16px",
           }}
         >
@@ -42,7 +47,7 @@ const CTA = () => {
             DoorDash
           </LinkCard>
         </Box>
-        <Box sx={{ marginLeft: "15vw", marginTop: "-15vw" }}>
+        <Box sx={{ marginLeft: "15vw", marginTop: matches ? "" : "-15vw" }}>
           <LinkCard
             src="/cafe_assets/Mobile/Mobile UberEatsArt.svg"
             href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"

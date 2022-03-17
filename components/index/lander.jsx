@@ -3,7 +3,11 @@ import { Box } from "@mui/system";
 import Head from "next/head";
 import Image from "next/image";
 import LinkCard from "../index/linkCard";
+import { useMediaQuery } from "@mui/material";
+import theme from "../../styles/theme";
 const Lander = () => {
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const statement = matches ? "width : '40vh'" : "";
   return (
     <Box
       sx={{
@@ -13,6 +17,8 @@ const Lander = () => {
         paddingBottom: "5vh",
         display: "flex",
         textAlign: "center",
+        alignItems: matches ? "center" : "inherit",
+
         flexDirection: "column",
         rowGap: "4vh",
       }}
@@ -27,6 +33,7 @@ const Lander = () => {
           gridTemplateRows: "repeat(16, 1fr)",
           columnGap: "4rem",
           marginX: "5vw",
+          width: matches ? "40vw" : "80vw"
         }}
       >
         <Box // cafe blanc offers comforting
@@ -104,7 +111,7 @@ const Lander = () => {
             src="/cafe_assets/Mobile/Mobile IMG 2 Cake.png"
           ></img>
         </Box>
-        
+
         <Box //handcraft treats
           sx={{
             gridRow: "7/10",

@@ -2,7 +2,10 @@ import React from "react";
 import LayoutDesktop from "./layoutDesktop";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import theme from "../../../styles/theme";
+import { useMediaQuery } from "@mui/material";
 export default function LanderDesktop() {
+  const matches = useMediaQuery(theme.breakpoints.up("xl"));
   return (
     <Box sx={{ height: "calc(95vh - 100px)", width: "100vw", display: "flex" }}>
       <Box
@@ -133,10 +136,18 @@ export default function LanderDesktop() {
             <Box
               sx={{ display: "flex", alignItems: "center", columnGap: "1rem" }}
             >
-              <Typography variant="homeTextNormal">
-                Try wonderful treats like cake, perfectly paired with
-                handcrafted beverages. 
-              </Typography>
+              {matches && (
+                <Typography variant="homeTextNormal">
+                  Try wonderful treats like cake, perfectly paired with
+                  handcrafted beverages.
+                </Typography>
+              )}
+              {!matches && (
+                <Typography variant="homeTextNormal">
+                  Try wonderful treats like cake paired with
+                  handcrafted beverages.
+                </Typography>
+              )}
             </Box>
           </Box>
         </Box>

@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Image from "next/image";
@@ -8,7 +8,10 @@ import About from "./about";
 import FeaturedItems from "./featuredItems";
 import Visit from "./visit";
 import Contact from "./contact";
+import Scrumptious from "./desktop/scrumptious";
+import theme from "../../styles/theme";
 const MobilePage = () => {
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box
       sx={{
@@ -19,7 +22,8 @@ const MobilePage = () => {
     >
       <Lander></Lander>
       <CTA></CTA>
-      <About></About>
+      {matches && <Scrumptious></Scrumptious>}
+      {!matches && <About></About>}
       <FeaturedItems></FeaturedItems>
       <Visit></Visit>
       <Contact></Contact>
