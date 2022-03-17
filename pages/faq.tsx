@@ -21,6 +21,10 @@ const FAQ = () => {
       }}
     >
       <Navbar></Navbar>
+      <Head>
+        <title>Café Blanc - FAQ</title>
+      </Head>
+
       {!matches && <MobilePage></MobilePage>}
       {matches && <Desktop></Desktop>}
     </Box>

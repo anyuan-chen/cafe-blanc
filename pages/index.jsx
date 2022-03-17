@@ -20,6 +20,10 @@ const Home = () => {
         paddingTop: matches ? "" : "5vw",
       }}
     >
+      {" "}
+      <Head>
+        <title>Café Blanc </title>
+      </Head>
       <Navbar></Navbar>
       {!matches && <MobilePage></MobilePage>}
       {matches && <DesktopPage></DesktopPage>}
