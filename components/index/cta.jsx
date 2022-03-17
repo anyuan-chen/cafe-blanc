@@ -20,7 +20,7 @@ const CTA = () => {
           display: "flex",
           flexDirection: "column",
           justifyItems: matches ? "center" : "",
-          rowGap: "8vh",
+          rowGap: matches ? "8vh" : "12vh",
         }}
       >
         <Box

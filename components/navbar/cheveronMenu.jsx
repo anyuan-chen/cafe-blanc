@@ -5,7 +5,9 @@ import { Typography } from "@mui/material";
 import { ButtonUnstyled } from "@mui/base";
 import { AnimatePresence, motion } from "framer-motion";
 import SelectUnstyled from "@mui/base/SelectUnstyled";
-
+const dropdownVariants={
+    
+}
 export default function CheveronMenu() {
   const [active, setActive] = React.useState(false);
   return (
@@ -17,7 +19,7 @@ export default function CheveronMenu() {
             setActive(!active);
           }}
           sx={{
-            height: "100%",
+            height: "98px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -34,7 +36,7 @@ export default function CheveronMenu() {
           </Typography>
           <img src="/cafe_assets/Desktop/Desktop Cheveron.svg"></img>
         </Box>
-        <Box sx={{ position: "absolute" }}>
+        <Box component={motion.div} variants={dropdownVariants} sx={{ position: "absolute", overflow: "hidden" }}>
           <Box
             component={ButtonUnstyled}
             sx={{
@@ -42,6 +44,7 @@ export default function CheveronMenu() {
               justifyContent: "center",
               alignItems: "center",
               columnGap: "2rem",
+              height: "98px",
               border: "2px solid #532A10",
               bgcolor: "#F5E4D7",
               px: "8rem",
