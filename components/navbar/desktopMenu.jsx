@@ -1,76 +1,34 @@
 import Link from "../shared/link";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
+import DesktopMenuLink from "./desktopMenuLink";
+import { useRouter } from "next/router";
 export default function DesktopMenu() {
+  const router = useRouter();
+  let style = [0, 0, 0, 0];
+  if (router.pathname === "/") {
+    style[0] = 1;
+  } else if (router.pathname === "/menu") {
+    style[1] = 1;
+  } else if (router.pathname === "/hours") {
+    style[2] = 1;
+  } else if (router.pathname === "/faq") {
+    style[3] = 1;
+  }
   return (
     <Box sx={{ display: "flex", fontFamily: "DMSans" }}>
-      <Link href="/" sx={{ textDecoration: "none" }}>
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderLeft: "2px solid #532A10",
-            px: "6rem",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: "3rem", color: "#532A10", fontFamily: "DMSans" }}
-          >
-            Home
-          </Typography>
-        </Box>
-      </Link>
-      <Link href="/cafe_assets/menu.pdf" sx={{ textDecoration: "none" }}>
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderLeft: "2px solid #532A10",
-            px: "6rem",
-          }}
-        >
-          <Typography sx={{ fontSize: "3rem", color: "#532A10" }}>
-            Menu
-          </Typography>
-        </Box>
-      </Link>
-      <Link href="/hours" sx={{ textDecoration: "none" }}>
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderLeft: "2px solid #532A10",
-            px: "6rem",
-          }}
-        >
-          <Typography sx={{ fontSize: "3rem", color: "#532A10" }}>
-            Hours
-          </Typography>
-        </Box>
-      </Link>
-      <Link href="/faq" sx={{ textDecoration: "none" }}>
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderLeft: "2px solid #532A10",
-            px: "6rem",
-          }}
-        >
-          <Typography sx={{ fontSize: "3rem", color: "#532A10" }}>
-            FAQ
-          </Typography>
-        </Box>
-      </Link>
-
+      <DesktopMenuLink href="/" highlight={style[0]}>
+        Home
+      </DesktopMenuLink>
+      <DesktopMenuLink href="/menu" highlight={style[1]}>
+        Menu
+      </DesktopMenuLink>
+      <DesktopMenuLink href="/hours" highlight={style[2]}>
+        Hours
+      </DesktopMenuLink>
+      <DesktopMenuLink href="/faq" highlight={style[3]}>
+        FAQ
+      </DesktopMenuLink>
       <Link href="/order" sx={{ textDecoration: "none" }}>
         <Box
           sx={{
