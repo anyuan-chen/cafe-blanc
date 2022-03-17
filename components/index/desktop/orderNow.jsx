@@ -4,10 +4,17 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import OrderCard from "./orderCard";
 import theme from "../../../styles/theme";
+import { motion } from "framer-motion";
 export default function OrderNow() {
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
   return (
-    <Box sx={{  color: "#532A10" }}>
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      sx={{ color: "#532A10" }}
+    >
       <Box
         sx={{
           display: "flex",

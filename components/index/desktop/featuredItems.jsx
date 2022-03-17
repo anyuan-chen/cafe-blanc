@@ -18,10 +18,31 @@ const textVariants = {
     color: "#FFFAF4",
   },
 };
+const staggerVariants = {
+  rest: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+const itemVariants = {
+  rest: { opacity: 0 },
+  animate: { opacity: 1 },
+};
 const FeaturedItems = () => {
   return (
     <AnimatePresence>
-      <Box sx={{ height: "calc(100vh - 100px)" }}>
+      <Box
+        sx={{ height: "calc(100vh - 100px)" }}
+        component={motion.div}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // transition={{ duration: 1 }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -46,25 +67,35 @@ const FeaturedItems = () => {
               flexDirection: "row",
               columnGap: "5vw",
             }}
+            component={motion.div}
+            variants={staggerVariants}
+            initial="rest"
+            whileInView="animate"
           >
-            <FeaturedItem
-              description="A strong, sweet, and espresso-based spin on a latte."
-              src="/cafe_assets/Desktop/Desktop Spanish Latte.png"
-            >
-              Spanish Latte
-            </FeaturedItem>
-            <FeaturedItem
-              description="Classic fresh strawberry puree swirled with cold cream."
-              src="/cafe_assets/Desktop/Desktop Strawberry Latte.png"
-            >
-              Strawberry Latte
-            </FeaturedItem>
-            <FeaturedItem
-              description="Concentrated caffeine that will wake you up with a creamy kick."
-              src="/cafe_assets/Desktop/Desktop Espresso.png"
-            >
-              Espresso
-            </FeaturedItem>
+            <motion.div variants={itemVariants}>
+              <FeaturedItem
+                description="A strong, sweet, and espresso-based spin on a latte."
+                src="/cafe_assets/Desktop/Desktop Spanish Latte.png"
+              >
+                Spanish Latte
+              </FeaturedItem>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <FeaturedItem
+                description="Classic fresh strawberry puree swirled with cold cream."
+                src="/cafe_assets/Desktop/Desktop Strawberry Latte.png"
+              >
+                Strawberry Latte
+              </FeaturedItem>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <FeaturedItem
+                description="Concentrated caffeine that will wake you up with a creamy kick."
+                src="/cafe_assets/Desktop/Desktop Espresso.png"
+              >
+                Espresso
+              </FeaturedItem>
+            </motion.div>
           </Box>
           <Box
             component={motion.div}

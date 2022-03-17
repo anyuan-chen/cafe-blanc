@@ -4,11 +4,16 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import theme from "../../../styles/theme";
 import { useMediaQuery } from "@mui/material";
+import { motion } from "framer-motion";
 export default function Scrumptious() {
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <Box
+      component={motion.div}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       sx={{
         paddingX: "15vw",
         display: "flex",

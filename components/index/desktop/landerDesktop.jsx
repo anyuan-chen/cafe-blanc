@@ -7,7 +7,7 @@ import { useMediaQuery } from "@mui/material";
 export default function LanderDesktop() {
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
   return (
-    <Box sx={{ height: "calc(100vh - 100px)", width: "100vw", display: "flex" }}>
+    <Box sx={{ height: "calc(110vh - 100px)", width: "100vw", display: "flex" }}>
       <Box
         sx={{
           marginX: "7.5vw",

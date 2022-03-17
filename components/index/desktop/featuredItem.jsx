@@ -1,10 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
+import { motion } from "framer-motion";
+const shadowVariants = {
+  rest: {
+    boxShadow: "6px 6px 0 #532A10",
+  },
+  animate: {
+    boxShadow: "8px 8px 0 #532A10",
+    transform: "translate(-2px, -2px)",
+  },
+};
 
 const FeaturedItem = ({ description, src, children }) => {
   return (
     <Box
+      component={motion.div}
+      initial="rest"
+      animate="rest"
+      whileHover="animate"
+      variants={shadowVariants}
       sx={{
         display: "grid",
         gridTemplateColumns: "repeat(7, 1fr)",
