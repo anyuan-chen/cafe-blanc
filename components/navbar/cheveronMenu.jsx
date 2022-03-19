@@ -55,7 +55,7 @@ export default function CheveronMenu() {
             Order Now
           </Typography>
           <Box component={motion.div} variants={imgVariants}>
-            <motion.img src="/cafe_assets/Desktop/Desktop Cheveron.svg"></motion.img>
+            <motion.img src="/cafe_assets/Desktop/3.5px.svg"></motion.img>
           </Box>
         </Box>
         <Box

@@ -21,7 +21,7 @@ export default function DesktopMenu() {
       <DesktopMenuLink href="/" highlight={style[0]}>
         Home
       </DesktopMenuLink>
-      <DesktopMenuLink href="/cafe_assets/menu.pdf" highlight={style[1]}>
+      <DesktopMenuLink href="/cafe_assets/cafe_blanc_menu.pdf" highlight={style[1]}>
         Menu
       </DesktopMenuLink>
       <DesktopMenuLink href="/hours" highlight={style[2]}>

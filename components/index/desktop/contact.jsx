@@ -96,7 +96,9 @@ const Contact = () => {
             >
               <Typography variant="bottomNavSubtitle">BROWSE</Typography>
               <ContactLink href="/">Home</ContactLink>
-              <ContactLink href="/cafe_assets/menu.pdf">Menu</ContactLink>
+              <ContactLink href="/cafe_assets/cafe_blanc_menu.pdf">
+                Menu
+              </ContactLink> 
               <ContactLink href="/hours">Hours</ContactLink>
               <ContactLink href="/faq">FAQ</ContactLink>
             </Box>
