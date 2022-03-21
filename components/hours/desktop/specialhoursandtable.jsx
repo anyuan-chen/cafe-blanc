@@ -39,7 +39,7 @@ export default function SpecialHoursAndTable() {
           <Box
             sx={{ display: "flex", flexDirection: "column", rowGap: "2rem" }}
           >
-            <Typography variant="body">
+            {/* <Typography variant="body">
               Good Friday | April 15th, 2022
             </Typography>
             <Typography variant="body">
@@ -51,7 +51,7 @@ export default function SpecialHoursAndTable() {
             </Typography>
             <Typography variant="body">
               Labour Day | September 5th, 2022
-            </Typography>
+            </Typography> */}
             <Typography variant="body">
               Christmas Day | December 25th, 2022
             </Typography>
