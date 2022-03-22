@@ -37,8 +37,8 @@ const FeaturedItem = ({ description, src, children }) => {
             height="100%"
             style={{
               transform: "scale(1.05)",
-              maxHeight: "100%",
-              maxWidth: "100%",
+              height: "auto",
+              width: matches ? "100%" : "100%",
             }}
           ></img>
         </Box>
