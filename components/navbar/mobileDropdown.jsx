@@ -87,7 +87,7 @@ export default function MobileDropdown() {
           <Box
             component={Link}
             target="_blank"
-            href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjglMjBDb3glMjBCbHZkJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyNDQ3Y2RhNzktNjU4Yi1hNzA4LTI1Y2ItNjc5ZjM1OWVjN2UxJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0My44NTQ5OTMlMkMlMjJsb25naXR1ZGUlMjIlM0EtNzkuMzQ0MjI5JTdE"
+            href="https://www.ubereats.com/ca/store/cafe-blanc-ltd/jLOBcxrWTHuZ5JpIY_sFWw"
             sx={{
               borderRadius: "100%",
               bgcolor: "white",
