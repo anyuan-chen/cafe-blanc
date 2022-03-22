@@ -20,7 +20,9 @@ export default function MobileDropdownLink({ href, children }) {
       >
         {children}
       </Typography>
-      <img src="icons/menu_arrow.svg"></img>
+      <Link href={href}>
+        <img src="icons/menu_arrow.svg"></img>
+      </Link>
     </Box>
   );
 }

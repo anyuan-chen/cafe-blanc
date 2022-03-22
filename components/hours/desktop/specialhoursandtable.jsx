@@ -177,8 +177,8 @@ export default function SpecialHoursAndTable() {
             color: #532a10;
             padding-left: ${matches ? "2rem" : "1rem"};
             padding-right: ${matches ? "2rem" : "1rem"};
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
           }
         `}</style>
       </Box>
