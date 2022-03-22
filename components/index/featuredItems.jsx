@@ -57,7 +57,7 @@ const FeaturedItems = () => {
             Strawberry Latte
           </FeaturedItem>
           <FeaturedItem
-            description="Concentrated caffeine that will wake you up with a  kick."
+            description="Concentrated caffeine that'll wake you up with a kick."
             src="/cafe_assets/Mobile/Mobile Espresso.png"
           >
             Espresso
