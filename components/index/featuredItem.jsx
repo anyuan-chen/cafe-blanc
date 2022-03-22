@@ -21,6 +21,7 @@ const FeaturedItem = ({ description, src, children }) => {
           paddingY: "15px",
           paddingX: "15px",
           borderRadius: "16px",
+          width: "50%"
         }}
       >
         <Box
@@ -38,7 +39,7 @@ const FeaturedItem = ({ description, src, children }) => {
             style={{
               transform: "scale(1.05)",
               height: "auto",
-              width: matches ? "100%" : "100%",
+              width: "90px"
             }}
           ></img>
         </Box>
