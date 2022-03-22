@@ -62,7 +62,7 @@ const FeaturedItems = () => {
           Espresso
         </FeaturedItem>
         <Box
-          href="/menu"
+          href="/cafe_blanc_menu_mobile.pdf"
           component={Link}
           sx={{
             width: "100%",

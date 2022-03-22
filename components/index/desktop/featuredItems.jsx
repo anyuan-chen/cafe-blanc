@@ -102,7 +102,7 @@ const FeaturedItems = () => {
             variants={buttonVariants}
           >
             <Box
-              href="/menu"
+              href="/cafe_blanc_menu.pdf"
               component={Link}
               sx={{
                 width: "100%",
