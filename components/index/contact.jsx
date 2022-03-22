@@ -50,6 +50,8 @@ const Contact = () => {
         ></hr>{" "}
         <Box
           sx={{ display: "flex", alignItems: "center", columnGap: "1.5rem" }}
+          component={Link}
+          href="/"
         >
           <img src="cafe_assets/Mobile/Mobile Outlined Logo.svg"></img>
           <Typography variant="bottomNavHeading">Café Blanc</Typography>
