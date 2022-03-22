@@ -30,6 +30,8 @@ const Contact = () => {
             flexDirection: "column",
             rowGap: "3rem",
           }}
+          component={Link}
+          href="/"
         >
           <img
             src="cafe_assets/Desktop/Desktop Outlined Logo.svg"
@@ -98,7 +100,7 @@ const Contact = () => {
               <ContactLink href="/">Home</ContactLink>
               <ContactLink href="/cafe_assets/cafe_blanc_menu.pdf">
                 Menu
-              </ContactLink> 
+              </ContactLink>
               <ContactLink href="/hours">Hours</ContactLink>
               <ContactLink href="/faq">FAQ</ContactLink>
             </Box>
