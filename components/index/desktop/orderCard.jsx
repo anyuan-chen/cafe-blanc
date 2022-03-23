@@ -11,7 +11,7 @@ const shadowVariants = {
     transform: "translate(-4px, -4px)",
   },
 };
-const textVariants = {
+const textVariants = {     
   rest: {
     textDecoration: "underline",
     textDecorationColor: "#FFFAF4",
