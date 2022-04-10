@@ -88,7 +88,7 @@ export default function DateTable() {
               <Typography variant="body">Friday</Typography>
             </td>
             <td className="element">
-              <Typography variant="body">12:30pm - 8pm</Typography>
+              <Typography variant="body">10am - 10pm</Typography>
             </td>
           </tr>
           <tr className="row">
